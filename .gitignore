@@ -1,0 +1,14 @@
+#Remove node package
+node_modules/
+
+#Remove private data
+user.db
+
+#Remove visual studio code preference
+.vscode/
+
+#Remove private envirement variable
+*.env
+
+#Remove Database Storage file of macOS folder
+.DS_Store
