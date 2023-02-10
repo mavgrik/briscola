@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin: 0vh 30vh;
+    text-align: center;
+    font-family: 'Cavolini Bold';
+    font-size: 3vw;
+}
+
+@font-face {
+    font-family: 'Cavolini Bold';
+    src: url('./../fonts/Cavolini_bold.TTF');
+    font-weight: normal;
+    font-style: normal;
+}

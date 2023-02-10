@@ -33,10 +33,10 @@ body {
 }
   
 .login {
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px 0;
-    width: 25%;
+    width: 35vw;
+    height: 20vw;
+    padding: 1vh 4vh;
+    border-radius: 2vh;
     text-align: left;
 }
   
@@ -51,23 +51,37 @@ label {
 }
   
 input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
+    padding: 1vh;
+    width: 80%;
+    font-size: large;
+    border: 0.5vh solid #ccc;
+    border-radius: 1vh;
+    margin-top: 1vh;
 }
   
 input[type="submit"] {
-    padding: 10px 20px;
+    font-size: x-large;
+    margin-top: 2.5vh;
+    padding: 1.5vh 7vh;
     background-color: #4CAF50;
     border: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 1vh;
     cursor: pointer;
 }
   
 input[type="submit"]:hover {
     background-color: #3e8e41;
-}  
+}
+
+h1 {
+    font-family: 'Cavolini Bold';
+    font-size: 3.5vw;
+    margin-top: 4vh;
+}
+
+@font-face {
+    font-family: 'Cavolini Bold';
+    src: url('./../fonts/Cavolini_bold.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
