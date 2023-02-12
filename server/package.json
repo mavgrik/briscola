@@ -5,9 +5,9 @@
   "author": "mavgrik",
   "license": "MIT",
   "private": true,
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "start": "node index"
   },
   "bugs": {
     "url": "https://github.com/mavgrik/briscola/issues"
@@ -16,7 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/mavgrik/briscola.git"
   },
-  "homepage": "https://github.com/mavgrik/briscola",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
