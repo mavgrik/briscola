@@ -4,10 +4,9 @@
     <meta charset="utf-8"/>
     <link rel="icon" href="%PUBLIC_URL%/favicon.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="theme-color" content="#000000"/>
     <meta name="description" content="Briscola"/>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/backgroud.css">
+    <link rel="stylesheet" href="../css/background.css">
     <title>Briscola</title>
   </head>
   <body>
@@ -21,6 +20,10 @@
       </div>
     </noscript>
     <div id="root"></div>
-
+    <script type="text/javascript">
+      window.onbeforeunload = function() {
+          return true
+      }
+    </script>
   </body>
 </html>

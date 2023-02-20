@@ -7,37 +7,38 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-    .login {
+    .room {
       background-color: #525252;
     }
-    button {
+    .room-confirm {
         color: #525252;
     }
-    input[type="text"] {
+    .room-input {
         background-color: #525252;
         color: #f2f2f2;
     }
   }
   
 @media (prefers-color-scheme: light) {
-    .login {
+    .room {
         background-color: #f2f2f2;
     }
-    button {
+    .room-confirm {
         color: #f2f2f2;
     }
-    input[type="text"] {
+    .room-input {
         background-color: #f2f2f2;
         color: #525252;
     }
 }
   
-.login {
+.room {
+    justify-content: center;
     width: 35vw;
     height: 20vw;
     padding: 1vh 4vh;
     border-radius: 2vh;
-    text-align: left;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +48,7 @@ label {
     font-weight: bold;
 }
   
-input[type="text"] {
+.room-input {
     padding: 1vh;
     width: 80%;
     font-size: large;
@@ -56,7 +57,7 @@ input[type="text"] {
     margin-top: 1vh;
 }
   
-button {
+.room-confirm {
     font-size: x-large;
     margin-top: 2.5vh;
     padding: 1.5vh 7vh;
@@ -66,13 +67,13 @@ button {
     cursor: pointer;
 }
   
-button:hover {
+.room-confirm:hover {
     background-color: #3e8e41;
 }
 
 h1 {
     font-family: 'Cavolini Bold';
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     margin-top: 4vh;
 }
 

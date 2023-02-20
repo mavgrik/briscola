@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .login {
+      background-color: #525252;
+    }
+    .login .confirm {
+        color: #525252;
+    }
+    .login input {
+        background-color: #525252;
+        color: #f2f2f2;
+    }
+}
+  
+@media (prefers-color-scheme: light) {
+    .login {
+        background-color: #f2f2f2;
+    }
+    .login .confirm {
+        color: #f2f2f2;
+    }
+    .login input {
+        background-color: #f2f2f2;
+        color: #525252;
+    }
+}
+
+.login {
+    width: 38vw;
+    height: 45vh;
+    justify-content: center;
+    display: flex;
+    border-radius: 2vh;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-login p {
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+    font-family: 'Cavolini';
+    font-size: 3vh;
+}
+
+.standard-login h1 {
+    font-family: 'Cavolini Bold';
+    font-size: 6vh;
+    margin-bottom: 0.25vh;
+    margin-top: 0.5vh;
+}
+
+.login input {
+    padding: 1vh;
+    width: 45vh;
+    font-size: large;
+    border: 0.5vh solid #ccc;
+    border-radius: 1vh;
+    margin-top: 1vh;
+}
+  
+.login .confirm {
+    width: 30vh;
+    height: 5vh;
+    font-size: 3vh;
+    margin-top: 2vh;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.login .confirm:hover {
+    background-color: #3e8e41;
+}
+
+@font-face {
+    font-family: 'Cavolini';
+    src: url('./../fonts/Cavolini.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cavolini Bold';
+    src: url('./../fonts/Cavolini_bold.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.other-login button {
+    background: none;
+    width: 10vh;
+    height: 10vh;
+    border: none;
+    border-radius: 3vh;
+    cursor: pointer;
+}
+
+.google-login {
+    margin-right: 1vh;
+}
+
+.twitter-login {
+    margin-right: 1vh;
+}
+
+.github-login {
+    margin-right: 1vh;
+}
+
+.discord-login {
+    margin-right: 1vh;
+}
+
+.other-login button img {
+    width: 5vh;
+    height: 5vh;
+}

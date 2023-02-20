@@ -1,20 +1,38 @@
-# dependencies
+#dependencies
 node_modules/
 
-# production
+#production
 build/
 
-# misc
+#misc
 .DS_Store
 *.env
 
 npm-debug.log*
-
-#Remove private data
-user.db
 
 #Remove visual studio code preference
 .vscode/
 
 #Remove under working files
 *.dis
+
+#Firebase Hosting
+firebase.json
+.firebaserc
+firebase-debug.log
+
+#Build generated
+build/
+DerivedData/
+
+#Local config/setup
+database.rules.json
+
+#Local cache
+.firebase/
+
+#GitHub workflow
+.github/
+
+#Firebase config
+firebaseConfig.json
