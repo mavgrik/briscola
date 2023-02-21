@@ -1,5 +1,5 @@
 import React, {useRef, useState} from "react"
-import {collection, serverTimestamp, addDoc, query, orderBy, limit, where} from 'firebase/firestore'
+import {collection, serverTimestamp, addDoc, query, orderBy, limit} from 'firebase/firestore'
 import {useCollectionData} from 'react-firebase-hooks/firestore'
 import './../css/lobby.css'
 

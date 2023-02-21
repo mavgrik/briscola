@@ -43,10 +43,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-    
-label {
-    font-weight: bold;
-}
   
 .room-input {
     padding: 1vh;
@@ -71,7 +67,7 @@ label {
     background-color: #3e8e41;
 }
 
-h1 {
+.room h1 {
     font-family: 'Cavolini Bold';
     font-size: 2.5vw;
     margin-top: 4vh;
