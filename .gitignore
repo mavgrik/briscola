@@ -35,4 +35,4 @@ database.rules.json
 .github/
 
 #Firebase config
-firebaseConfig.json
+*.json

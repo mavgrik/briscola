@@ -1,12 +1,3 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-}
-
 @media (prefers-color-scheme: dark) {
     .login {
       background-color: #525252;
@@ -38,17 +29,9 @@ body {
     padding-left: 4vw;
     padding-top: 1vh;
     padding-bottom: 2vh;
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
     width: fit-content;
     height: fit-content;
-    justify-content: center;
-    border-radius: 2vh;
-    text-align: center;
-    align-items: center;
+    border-radius: 2vh; 
 }
 
 .other-login p {
@@ -59,6 +42,12 @@ body {
 }
 
 .standard-login {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.standard-login div{
     display: grid;
     justify-items: center;
     align-items: center;
@@ -81,6 +70,7 @@ body {
 }
   
 .login .confirm {
+    transition: box-shadow .3s;
     width: 30vh;
     height: 5vh;
     font-size: 3vh;
@@ -92,6 +82,7 @@ body {
 }
 
 .login .confirm:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
     background-color: #3e8e41;
 }
 
@@ -110,28 +101,35 @@ body {
 }
 
 .other-login button {
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+    transition: box-shadow .3s;
     background: none;
-    width: 10vh;
-    height: 10vh;
+    width: 7vh;
+    height: 7vh;
     border: none;
-    border-radius: 3vh;
+    border-radius: 5vh;
     cursor: pointer;
 }
 
+.other-login button:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
 .google-login {
-    margin-right: 1vh;
+    margin-right: 2.5vh;
 }
 
 .twitter-login {
-    margin-right: 1vh;
+    margin-right: 2.5vh;
 }
 
 .github-login {
-    margin-right: 1vh;
+    margin-right: 2.5vh;
 }
 
 .discord-login {
-    margin-right: 1vh;
+    margin-right: 2.5vh;
 }
 
 .other-login button img {
@@ -139,24 +137,18 @@ body {
     height: 5vh;
 }
 
-.password-error {
+.error {
     animation-duration: 0.5s;
     animation-name: animate-pop;
     background-color: #da0000;
-    padding-right: 1vw;
-    padding-left: 1vw;
+    padding-right: 7vw;
+    padding-left: 7vw;
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
-    display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 40vw;
+    width: fit-content;
     height: fit-content;
     justify-content: center;
     border-radius: 2vh;
-    text-align: center;
     align-items: center;
 }
 
@@ -172,14 +164,26 @@ body {
     }
 }
 
-.password-error h2 {
+.error h2 {
     font-family: 'Cavolini Bold';
     font-size: 3.5vh;
     margin-bottom: 0vh;
     margin-top: 0.5vh;
 }
 
-.password-error p {
+.error p {
+    margin-top: 1vh;
+    margin-bottom: 0.25vh;
+    font-family: 'Cavolini';
+    font-size: 2vh;
+}
+
+.error ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.error ul li {
     margin-top: 1vh;
     margin-bottom: 0.25vh;
     font-family: 'Cavolini';
@@ -190,7 +194,62 @@ body {
     display: grid;
     column-gap: 0vh;
     row-gap: 5vh;
-    justify-content: baseline;
     text-align: center;
+    place-items: center;
+}
+
+.alert {
+    animation-duration: 0.5s;
+    animation-name: animate-pop;
+    background-color: #00b9de;
+    padding-right: 7vw;
+    padding-left: 7vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    border-radius: 2vh;
     align-items: center;
+}
+
+.alert h2 {
+    font-family: 'Cavolini Bold';
+    font-size: 3.5vh;
+    margin-bottom: 0vh;
+    margin-top: 0.5vh;
+}
+
+.alert p {
+    margin-top: 1vh;
+    margin-bottom: 0.25vh;
+    font-family: 'Cavolini';
+    font-size: 2vh;
+}
+
+.reset {
+    transition: box-shadow .3s;
+    background: none;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 3vh;
+    cursor: pointer;
+    color: black;
+}
+
+.reset:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    color: #3e8e41;
+}
+
+.reset p {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    font-family: 'Cavolini';
+    font-size: 2.5vh;
 }
